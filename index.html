@@ -5,82 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
 </head>
 <body>
-    <h1>Forms</h1>
+    <h1>Login</h1>
+
     <form>
 
-        <label for="nomeUsuario">Nome usuario</label>
-        <input type="text" name="nomeUsuario" value="Daniel">
-
-        <label for="contrasinal">Contrasinal</label>
-        <input type="password" name="contrasinal">
-
-        <label for="menu">Selecciona tipo menu</label>
-        <input type="checkbox" name="menu" value="plato1">
-        <input type="checkbox" name="menu" value="plato2">
-        <input type="checkbox" name="menu" value="plato3">
-
-        <label for="vegano">Opcion menu vegano</label>
-        <label for="veganoSi">vegano</label>
-        <input type="radio" name="vegano" value="si" id="veganoSi">
-        <label for="veganoNon">Non vegano</label>
-        <input type="radio" name="vegano" value="non" id="veganoNon">
-
-        <button>Non fagas click aquí</button>
-
-        <input type="submit" name="finalizado" value="Enviar">
-        <input type="submit" name="senRematar" value="Gardar borrador">
-
-        <label for="vegano">Opcion menu vegano</label>
-        <label for="veganoSi">
-            Vegano
-            <input type="radio" name="vegano" value="si" id="veganoSi">
+        <label>
+            e-mail:
+            <input type="email" name="correo1">
         </label>
-        
-        <label for="veganoNon">
-            Predator
-            <input type="radio" name="vegano" value="non" id="veganoNon">
+
+        <!--
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email">
+        -->
+
+        <label>
+            Contrasinal:
+            <input type="password" name="contrasinal">
         </label>
+
+        <!--
+        <label for="password">Contrasinal:</label>
+        <input type="password" id="password" name="contrasinal">
+        -->
+
+        <input type="submit" value="Enviar">
 
     </form>
 
+    <h1>Rexistro</h1>
 
+    <form>
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+        <label>
+            e-mail:
+            <input type="email" name="correo">
+        </label>
+        <label>
+            Contrasinal:
+            <input type="password" name="contrasinal">
+        </label>
+        <label>
+            Repite o contrasinal:
+            <input type="password" name="contrasinal1">
+        </label>
+        <label>
+            <input type="checkbox" name="consentimento">
+            Autorizo o envío de e-mails de calquer tipo.
+        </label>
 
+        <fieldset>
+            <legend>A cousa das cookies</legend>
+            <label>
+                <input type="radio" name="cookies" value="todas">
+                Acepto tódalas cookies
+            </label>
+            <label>
+                <input type="radio" name="cookies" value="necesarias">
+                Acepto só as cookies necesarias para o funcionamento
+            </label>
+            <label>
+                <input type="radio" name="cookies" value="ningunha">
+                Non acepto cookies
+            </label>
+        </fieldset>
 
-    <label for="nomeUsuario">Nome usuario</label>
-    <input type="text" name="nomeUsuario" value="Daniel">
+        <fieldset>
+            <legend>Falanos das túas intereses</legend>
+            <label>
+                <input type="checkbox" name="intereses" value="natureza">
+                Natureza
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="musica">
+                Música
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" value="politica">
+                Política
+            </label>
+        </fieldset>
 
-    <label for="contrasinal">Contrasinal</label>
-    <input type="password" name="contrasinal">
+        <textarea name="" id="" cols="30" rows="10" maxlength="300"></textarea>
 
-    <label for="menu">Selecciona tipo menu</label>
-    <input type="checkbox" name="menu" value="plato1">
-    <input type="checkbox" name="menu" value="plato2">
-    <input type="checkbox" name="menu" value="plato3">
+        <input type="submit" value="Enviar">
 
-    <label for="vegano">Opcion menu vegano</label>
-    <label for="veganoSi">vegano</label>
-    <input type="radio" name="vegano" value="si" id="veganoSi">
-    <label for="veganoNon">Non vegano</label>
-    <input type="radio" name="vegano" value="non" id="veganoNon">
-
-    <button>Non fagas click aquí</button>
-
-    <input type="submit" name="finalizado" value="Enviar">
-    <input type="submit" name="senRematar" value="Gardar borrador">
-
-    <label for="vegano">Opcion menu vegano</label>
-    <label for="veganoSi">
-        Vegano
-        <input type="radio" name="vegano" value="si" id="veganoSi">
-    </label>
-    
-    <label for="veganoNon">
-        Predator
-        <input type="radio" name="vegano" value="non" id="veganoNon">
-    </label>
-
+    </form>
 </body>
 </html>
